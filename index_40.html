@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Shelton for CELSIUS, Ambassador Reapplication</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ffffff;
+    --paper-2: #f2f2f2;
+    --ink: #0d0d0d;
+    --ink-dim: #5c5c5c;
+    --accent: rgb(255, 169, 58);
+    --accent-dim: #fff0dc;
+    --line: #e6e6e6;
+
+    --display: 'Barlow Condensed', sans-serif;
+    --body: 'Inter', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  ::selection { background: var(--accent); color: var(--paper); }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 0 28px; }
+
+  .dochead {
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dochead .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .dochead .tag b { color: var(--accent); }
+
+  .hero { padding: 64px 0 48px; }
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 6px 12px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: clamp(38px, 6.4vw, 68px);
+    line-height: 0.98;
+    letter-spacing: -0.01em;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .hero-sub {
+    margin-top: 22px;
+    font-size: 17px;
+    color: var(--ink-dim);
+    max-width: 60ch;
+  }
+  .hero-meta {
+    margin-top: 32px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+  }
+  .hero-meta strong { color: var(--ink); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 44px;
+    align-items: center;
+  }
+  .hero-photo {
+    aspect-ratio: 4 / 5;
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .section { padding: 52px 0; border-top: 1px solid var(--line); }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .section h2 {
+    font-family: var(--display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(26px, 3.8vw, 36px);
+    margin-bottom: 30px;
+  }
+
+  .fit-grid { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .fit-row { display: grid; grid-template-columns: 1fr 1fr; background: var(--paper); }
+  .fit-row > div { padding: 22px 24px; }
+  .fit-row .brand-side { border-right: 1px solid var(--line); }
+  .fit-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 8px;
+  }
+  .fit-row .brand-side .fit-label { color: var(--accent); }
+  .fit-row .adam-side .fit-label { color: var(--ink); }
+  .fit-row p { font-size: 14.5px; color: var(--ink); }
+
+  .proof-panel { border: 2px solid var(--ink); }
+  .proof-panel .head { background: var(--ink); color: var(--paper); padding: 14px 20px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .proof-row { display: flex; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .proof-row:last-child { border-bottom: none; }
+  .proof-row .k { color: var(--ink-dim); }
+  .proof-row .v { font-family: var(--mono); font-weight: 600; }
+
+  .cal { display: flex; flex-direction: column; }
+  .cal-row { display: grid; grid-template-columns: 1fr auto auto; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .cal-row:last-child { border-bottom: none; }
+  .cal-row .name { font-family: var(--display); font-weight: 700; font-size: 19px; text-transform: uppercase; }
+  .cal-row .date, .cal-row .type { font-family: var(--mono); font-size: 12px; color: var(--ink-dim); }
+
+  .ideas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .idea { background: var(--paper-2); padding: 22px 20px; border: 1px solid var(--line); }
+  .idea .num { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-bottom: 10px; }
+  .idea h3 { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 18px; margin-bottom: 8px; }
+  .idea p { font-size: 13.5px; color: var(--ink-dim); }
+
+  .reels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .reel {
+    background: var(--ink);
+    color: var(--paper);
+    aspect-ratio: 8/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+  }
+  .reel .play { width: 40px; height: 40px; border: 2px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .reel .play svg { width: 13px; height: 13px; fill: var(--accent); }
+  .reel .cap { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 15px; }
+  .reel .sub { font-family: var(--mono); font-size: 10px; color: #a9a9a9; letter-spacing: 0.05em; text-transform: uppercase; }
+
+  .cta { background: var(--ink); color: var(--paper); padding: 44px 36px; text-align: center; }
+  .cta h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(26px, 4vw, 38px); margin-bottom: 14px; }
+  .cta p { color: #cfcfcf; max-width: 50ch; margin: 0 auto 26px; }
+  .cta-links { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 20px;
+  }
+  .cta-btn.primary { background: var(--paper); color: var(--ink); }
+  .cta-btn.secondary { border: 1px solid #ffffff55; color: var(--paper); }
+
+  footer { padding: 28px 0; font-family: var(--mono); font-size: 11px; color: var(--ink-dim); text-align: center; }
+
+  @media (max-width: 720px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-photo { order: -1; aspect-ratio: 1 / 1; }
+    .hero-photo img { object-position: center top; }
+    .fit-row { grid-template-columns: 1fr; }
+    .fit-row .brand-side { border-right: none; border-bottom: 1px solid var(--line); }
+    .ideas { grid-template-columns: 1fr; }
+    .reels { grid-template-columns: 1fr; }
+    .cal-row { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="dochead">
+    <div class="tag">AMBASSADOR REAPPLICATION</div>
+    <div class="tag"><b>Adam Shelton</b> × CELSIUS</div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">Prepared for CELSIUS</div>
+        <h1>Live. Fit. Go. <em>That's not a tagline, it's my actual week.</em></h1>
+        <p class="hero-sub">Men's Pro Hyrox competitor based in Canberra. Two jobs, seven days a week, a double bachelor's degree, and six training sessions a week, chasing a sub-70 Pro Solo and a sub-90 half marathon in Melbourne this year. Reapplying to the CELSIUS ambassador program with a bigger platform and a clearer case than last time.</p>
+        <div class="hero-meta">
+          <div>Athlete: <strong>Adam Shelton</strong></div>
+          <div>Category: <strong>Men's Pro, Hyrox</strong></div>
+          <div>Based: <strong>Canberra, Australia</strong></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="profile.jpg" alt="Adam Shelton" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">The Fit</div>
+    <h2>Why the case is stronger this time around</h2>
+    <div class="fit-grid">
+      <div class="fit-row">
+        <div class="brand-side"><div class="fit-label">CELSIUS</div><p>Zero sugar, clinically proven to support movement, not just a jolt of energy.</p></div>
+        <div class="adam-side"><div class="fit-label">Adam</div><p>Six days of training a week needs energy that supports the session, not just gets me through the door.</p></div>
+      </div>
+      <div class="fit-row">
+        <div class="brand-side"><div class="fit-label">CELSIUS</div><p>Born in fitness, built around real movement and real workouts.</p></div>
+        <div class="adam-side"><div class="fit-label">Adam</div><p>Hyrox is movement by definition, strength and endurance stations back to back in the same hour.</p></div>
+      </div>
+      <div class="fit-row">
+        <div class="brand-side"><div class="fit-label">CELSIUS</div><p>Live. Fit. Go. is framed as a daily commitment, not a slogan.</p></div>
+        <div class="adam-side"><div class="fit-label">Adam</div><p>Two jobs, a double degree, and six training days a week is that daily commitment in practice.</p></div>
+      </div>
+      <div class="fit-row">
+        <div class="brand-side"><div class="fit-label">CELSIUS</div><p>Built to reach the everyday achiever, not just elite athletes.</p></div>
+        <div class="adam-side"><div class="fit-label">Adam</div><p>Content built on the everyday athlete angle, the sessions that happen anyway, not a highlight reel.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">Athlete Profile</div>
+    <h2>The numbers, verified</h2>
+    <div class="proof-panel">
+      <div class="head">Training and Performance</div>
+      <div class="proof-row"><span class="k">Training frequency</span><span class="v">6 days / week</span></div>
+      <div class="proof-row"><span class="k">Hyrox Pro Solo PB</span><span class="v">1:25:38 (Pro debut)</span></div>
+      <div class="proof-row"><span class="k">2026 goal</span><span class="v">Sub-70 Pro Solo, Sub-90 Half Marathon</span></div>
+      <div class="proof-row"><span class="k">Last event</span><span class="v">Hyrox Sydney, Men's Pro Solo</span></div>
+      <div class="proof-row"><span class="k">Instagram</span><span class="v">1.3K followers, @shelto2</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">Exposure Calendar</div>
+    <h2>Where Adam × CELSIUS shows up next</h2>
+    <div class="cal">
+      <div class="cal-row"><div class="name">City2Surf</div><div class="date">August 2026</div><div class="type">14km Run</div></div>
+      <div class="cal-row"><div class="name">Hyrox Perth</div><div class="date">August 2026</div><div class="type">Men's Pro Solo</div></div>
+      <div class="cal-row"><div class="name">Melbourne Half Marathon</div><div class="date">October 2026</div><div class="type">21.1km Run</div></div>
+      <div class="cal-row"><div class="name">Hyrox Melbourne</div><div class="date">December 2026</div><div class="type">5 Races inc. Men's Pro Solo</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">Content Sample</div>
+    <h2>What the content already looks like</h2>
+    <div class="reels">
+      <a class="reel" href="https://www.instagram.com/reel/DaczXtbJmj-/" target="_blank" rel="noopener">
+        <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="cap">Hyrox Sydney race day</div>
+        <div class="sub">Watch on Instagram →</div>
+      </a>
+      <a class="reel" href="https://www.instagram.com/reel/DYlB1jnTYpC/" target="_blank" rel="noopener">
+        <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="cap">Day in the life</div>
+        <div class="sub">Watch on Instagram →</div>
+      </a>
+      <a class="reel" href="https://www.instagram.com/reel/DZI8ilozWeh/" target="_blank" rel="noopener">
+        <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="cap">1 month out from Hyrox Sydney</div>
+        <div class="sub">Watch on Instagram →</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="eyebrow">Proposed Ideas</div>
+    <h2>A few directions worth testing</h2>
+    <div class="ideas">
+      <div class="idea">
+        <div class="num">01</div>
+        <h3>Fuelled By Go</h3>
+        <p>The pre-session routine, the can, the warmup, the first rep. Short and repeatable across every training day.</p>
+      </div>
+      <div class="idea">
+        <div class="num">02</div>
+        <h3>The Numbers Behind Every Rep</h3>
+        <p>Pair the data analytics background with CELSIUS's own clinical research angle. What's actually happening physiologically, explained simply.</p>
+      </div>
+      <div class="idea">
+        <div class="num">03</div>
+        <h3>Two Jobs, One Rep at a Time</h3>
+        <p>A single long form piece following one full week, work, study, and training, with CELSIUS as the constant across all of it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Let's talk</h2>
+    <p>Reapplying with a clearer case and a bigger platform than last time. Open to a call, a trial period, or whatever the next step usually looks like.</p>
+    <div class="cta-links">
+      <a class="cta-btn primary" href="mailto:adamshelton03@gmail.com">Email adamshelton03@gmail.com</a>
+      <a class="cta-btn secondary" href="https://instagram.com/shelto2" target="_blank" rel="noopener">@shelto2 on Instagram</a>
+      <a class="cta-btn secondary" href="https://adamshelton.xyz" target="_blank" rel="noopener">Full site →</a>
+    </div>
+  </div>
+
+  <footer>Prepared by Adam Shelton, Canberra, Australia</footer>
+</div>
+
+</body>
+</html>
